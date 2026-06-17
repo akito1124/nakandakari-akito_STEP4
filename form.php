@@ -3,12 +3,15 @@
 <head>
     <meta charset="UTF-8">
     <title>フォーム入力</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20">
 </head>
 <body>
-    <h1>フォーム入力</h1> <!-- 白い枠の外に出す -->
+
+    <h1 class="page-title">フォーム入力</h1>
+
     <div class="container">
         <form action="confirm.php" method="post">
+
             <label for="name">名前:</label>
             <input type="text" id="name" name="name">
 
@@ -33,8 +36,9 @@
                 <option value="女性">女性</option>
             </select>
 
-            <button type="submit">送信</button>
+            <button type="submit" class="submit-btn">送信</button>
         </form>
     </div>
+
 </body>
 </html>
