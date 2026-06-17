@@ -15,9 +15,8 @@ $gender = $_POST["gender"] ?? "";
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>入力内容確認</h1> <!-- 白い枠の外 -->
     <div class="container">
-        <h1>入力内容確認</h1>
-
         <p>名前: <?= htmlspecialchars($name) ?></p>
         <p>年齢: <?= htmlspecialchars($age) ?></p>
         <p>電話番号: <?= htmlspecialchars($phone) ?></p>
