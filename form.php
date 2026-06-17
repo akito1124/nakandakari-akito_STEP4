@@ -6,9 +6,8 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <h1>フォーム入力</h1> <!-- 白い枠の外に出す -->
     <div class="container">
-        <h1>フォーム入力</h1>
-
         <form action="confirm.php" method="post">
             <label for="name">名前:</label>
             <input type="text" id="name" name="name">
