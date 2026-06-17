@@ -1,16 +1,21 @@
+<?php
+include 'confirm.php';
+?>
 <!DOCTYPE html>
 <html lang="ja">
 <head>
     <meta charset="UTF-8">
     <title>フォーム入力</title>
-    <link rel="stylesheet" href="style.css?v=20">
+    <link rel="stylesheet" href="style.css?v=100">
 </head>
 <body>
 
-    <h1 class="page-title">フォーム入力</h1>
+<h1 class="page-title">フォーム入力</h1>
+
+<div class="wrapper">
 
     <div class="container">
-        <form action="confirm.php" method="post">
+        <form action="form.php" method="post">
 
             <label for="name">名前:</label>
             <input type="text" id="name" name="name">
@@ -39,6 +44,12 @@
             <button type="submit" class="submit-btn">送信</button>
         </form>
     </div>
+
+    <div class="container">
+        <?php show_confirm(); ?>
+    </div>
+
+</div>
 
 </body>
 </html>
