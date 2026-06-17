@@ -4,11 +4,15 @@ body {
     padding: 40px;
 }
 
+/* タイトルを左のフォーム枠の上に配置 */
 .page-title {
-    text-align: center;
     font-size: 28px;
     font-weight: bold;
+    text-align: left;
+    width: 350px; /* 左のフォーム枠と同じ幅 */
+    margin-left: calc(50% - 390px); /* 左枠の位置に合わせて中央から左へずらす */
     margin-bottom: 20px;
+    margin-top: 0;
 }
 
 .wrapper {
@@ -48,4 +52,8 @@ input, select {
     border-radius: 5px;
     cursor: pointer;
     text-align: left;
+}
+
+.submit-btn:hover {
+    background-color: #0069d9;
 }
