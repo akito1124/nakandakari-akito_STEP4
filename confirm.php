@@ -12,10 +12,12 @@ $gender = $_POST["gender"] ?? "";
 <head>
     <meta charset="UTF-8">
     <title>入力内容確認</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20">
 </head>
 <body>
-    <h1>入力内容確認</h1> <!-- 白い枠の外 -->
+
+    <h1 class="page-title">入力内容確認</h1>
+
     <div class="container">
         <p>名前: <?= htmlspecialchars($name) ?></p>
         <p>年齢: <?= htmlspecialchars($age) ?></p>
@@ -25,5 +27,6 @@ $gender = $_POST["gender"] ?? "";
         <p>質問: <?= htmlspecialchars($question) ?></p>
         <p>性別: <?= htmlspecialchars($gender) ?></p>
     </div>
+
 </body>
 </html>
