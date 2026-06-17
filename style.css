@@ -4,19 +4,17 @@ body {
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    gap: 40px; /* 左右の間隔 */
+    gap: 40px;
     padding: 40px;
 }
 
-/* タイトルを白い枠の外に出す */
-h1 {
+.page-title {
     text-align: center;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
-/* 白い枠（フォームと確認） */
 .container {
     background-color: #fff;
     padding: 30px;
@@ -25,7 +23,6 @@ h1 {
     width: 350px;
 }
 
-/* ラベルと入力欄 */
 label {
     display: block;
     margin-top: 10px;
@@ -39,20 +36,18 @@ input, select {
     border-radius: 5px;
 }
 
-/* 送信ボタン：青・左寄せ */
-button {
+.submit-btn {
     margin-top: 20px;
     width: 120px;
     padding: 10px;
-    background-color: #007bff; /* 鮮やかな青 */
+    background-color: #007bff;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
-    display: block;
-    text-align: center;
+    text-align: left;
 }
 
-button:hover {
+.submit-btn:hover {
     background-color: #0069d9;
 }
